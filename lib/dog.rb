@@ -75,7 +75,7 @@ class Dog
     binding.pry
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?, breed = ?", name, breed)
     if dog.empty?
-      binding.pry
+
     end
   end
 end
