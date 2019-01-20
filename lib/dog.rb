@@ -68,6 +68,6 @@ class Dog
       SQL
     result = DB[:conn].execute(sql, id)[0]
     self.new(id: result[0], name: result[1], breed: result[2])
-    binding.pry
+
   end
 end
