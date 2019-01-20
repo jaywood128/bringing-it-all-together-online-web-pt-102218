@@ -55,6 +55,7 @@ class Dog
   end
 
   def update
+    bindind.pry
     sql = <<-SQL
     UPDATE dogs SET id = ?, name = ?, breed = ? WHERE id = ?
     SQL
